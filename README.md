@@ -3,7 +3,7 @@
 ARP spoofing is when an attacker is pretending to be a server and the victim
 on a local network.
 
-![Isn't that Middle Man?](http://imgur.com/BKig86m)
+![Isn't that Middle Man?](http://imgur.com/BKig86m.jpg)
 
 ## ARP
 
