@@ -10,7 +10,11 @@ local networks. This is because ARP protocols are not authenticated.
 
 ![Isn't that Middle Man?](http://imgur.com/BKig86m.jpg)
 
+![Stranger Danger](http://i.imgur.com/jYZQ3aO.jpg)
+
 ## How it works (ARP Process on LAN)
+
+![YO MAC ADDRESS](http://i.imgur.com/yaWVKOV.png)
 
 ARP is the address resolution protocols that are used by machines on a Local
 Area Network(LAN) to communicate with each other. On local area network or LAN
@@ -27,15 +31,18 @@ of the router.  Then it would send an ARP back to the router which saves the
 computer's IP and MAC address on a cache. The router is dumb and typically
 forgets this information so it is constantly asking for these addresses.
 
+[ARP Cache](http://i.imgur.com/VGaop6C.jpg)
+
 When this happens ARP spoofers would try to send a fake message tricking both
 parties into the spoofer's MAC address is attached to the router's IP address
 and vice versa.
 
-![Stranger Danger](http://i.imgur.com/jYZQ3aO.jpg)
+[Creepy Computers](http://i.imgur.com/GI6i0qO.png)
 
 ## Signs of Spoofing
 
-
+Multiple IP addresses associated with a single MAC address,
+although there are legitimate uses of such a configuration.
 
 ## Defenses Against ARP Spoofing
 
@@ -61,6 +68,15 @@ Like mentioned above cryptograhic network protocols like HTTPS can help with
 ARP spoofing. When the data gets sent back it is encrypted so the contents
 of the packet can't be seen. In HTTP it is left bare so you can see the
 password, username, and website the browser is accessing.
+
+## Protecting Yourself
+
+Arpwatch
+Antidote: Linux daemon, monitors mappings, unusually large number of ARP packets
+DefendARP: A host-based ARP table monitoring and defense tool designed for
+use when connecting to public wifi. DefendARP detects ARP poisoning attacks,
+corrects the poisoned entry, and identifies the MAC and IP address of the
+attacker.
 
 ## Tools for ARP Spoofing
 
