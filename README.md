@@ -14,14 +14,14 @@ local networks. This is because ARP protocols are not authenticated.
 
 ## How it works (ARP Process on LAN)
 
-![YO MAC ADDRESS](http://i.imgur.com/yaWVKOV.png)
-
 ARP is the address resolution protocols that are used by machines on a Local
 Area Network(LAN) to communicate with each other. On local area network or LAN
 computers are located by their MAC address through the use of ARP messages.
 On a local network on MAC address can transmit data not IP addresses, IP address
 is used to communicate outside of the network. Everything on the local network
 has a IP address and MAC address even routers, this is important.
+
+![YO MAC ADDRESS](http://i.imgur.com/yaWVKOV.png)
 
 So the wireless routers are the default gateway for computers to reach the
 outside world. When a default gateway wants a particular IP address of a
@@ -31,13 +31,13 @@ of the router.  Then it would send an ARP back to the router which saves the
 computer's IP and MAC address on a cache. The router is dumb and typically
 forgets this information so it is constantly asking for these addresses.
 
-[ARP Cache](http://i.imgur.com/VGaop6C.jpg)
+![ARP Cache](http://i.imgur.com/VGaop6C.jpg)
 
 When this happens ARP spoofers would try to send a fake message tricking both
 parties into the spoofer's MAC address is attached to the router's IP address
 and vice versa.
 
-[Creepy Computers](http://i.imgur.com/GI6i0qO.png)
+![Creepy Computers](http://i.imgur.com/GI6i0qO.png)
 
 ## Signs of Spoofing
 
