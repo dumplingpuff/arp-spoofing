@@ -39,6 +39,8 @@ and vice versa.
 
 ![Creepy Computers](http://i.imgur.com/GI6i0qO.png)
 
+![REAL DIAGRAm](http://i.imgur.com/2cZEseg.png)
+
 ## Signs of Spoofing
 
 Multiple IP addresses associated with a single MAC address,
