@@ -33,6 +33,10 @@ and vice versa.
 
 ![Stranger Danger](http://i.imgur.com/jYZQ3aO.jpg)
 
+## Signs of Spoofing
+
+
+
 ## Defenses Against ARP Spoofing
 
 Packet filtering: Packet filters inspect packets being transmitted across a
@@ -51,6 +55,13 @@ Use cryptographic network protocols:
 Transport Layer Security (TLS), Secure Shell (SSH), HTTP Secure (HTTPS) will
 encrypt data before it is sent out and authenticate data when it comes in.
 
+## Getting Data from HTTPS not HTTP
+
+Like mentioned above cryptograhic network protocols like HTTPS can help with
+ARP spoofing. When the data gets sent back it is encrypted so the contents
+of the packet can't be seen. In HTTP it is left bare so you can see the
+password, username, and website the browser is accessing.
+
 ## Tools for ARP Spoofing
 
 PacketCreator
@@ -63,10 +74,10 @@ Cain e Abel
 MAC addresses are called the physcial address, this is because these addresses
 are assigned by the manufacturer of a network interface controller
 
+## Example
 
+[cisco](http://www.cisco.com/c/en/us/products/collateral/switches/catalyst-6500-series-switches/white_paper_c11_603839.html)
 
-A media access control address (MAC address), also called physical address, is a unique identifier assigned to network interfaces for communications on the physical network segment. MAC addresses are used as a network address for most IEEE 802 network technologies, including Ethernet and WiFi. Logically, MAC addresses are used in the media access control protocol sublayer of the OSI reference model.
+[ettercap diagram](http://openmaniak.com/ettercap.php#diagram)
 
-MAC addresses are most often assigned by the manufacturer of a network interface controller (NIC) and are stored in its hardware, such as the card's read-only memory or some other firmware mechanism. If assigned by the manufacturer, a MAC address usually encodes the manufacturer's registered identification number and may be referred to as the burned-in address (BIA). It may also be known as an Ethernet hardware address (EHA), hardware address or physical address. This can be contrasted to a programmed address, where the host device issues commands to the NIC to use an arbitrary address.
-
-A network node may have multiple NICs and each NIC must have a unique MAC address.
+[WireShark shows red](http://openmaniak.com/ettercap_arp.php)
