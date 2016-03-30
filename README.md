@@ -71,6 +71,12 @@ ARP spoofing. When the data gets sent back it is encrypted so the contents
 of the packet can't be seen. In HTTP it is left bare so you can see the
 password, username, and website the browser is accessing.
 
+## SSL Stripping
+
+I used a program to try to strip the SSL from the address but the browsers now
+have preload HSTS(HTTP Strict Transport Security) tags which automatically loads
+https address no matter if you try to redirect to http.
+
 ## Protecting Yourself
 
 Arpwatch
